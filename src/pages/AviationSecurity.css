@@ -1,18 +1,24 @@
 .wrapper {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    padding: 20px;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+.bg_wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 100dvh;
 }
 
 .title {
     font-size: 2rem;
+    margin: 0;
+    padding: 32px;
 }
 
 .question-section {
-    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .question-count {
@@ -35,9 +41,12 @@ button {
     background-color: #4caf50;
     color: white;
     border: none;
+    min-width: 100px;
+    width: 100px;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    margin: 25px;
     transition: background-color 0.3s ease;
 }
 
