@@ -43,6 +43,7 @@ function AviationSecurity() {
 
     return (
         <div className="wrapper">
+            <h1 className='title'>Авіаційна безпека</h1>
             {showScore ? (
                 <div className="score-section">
                     Ви вірно відповіли на {score} питань з {questions.length} Ваш бал - {score*100/questions.length}
