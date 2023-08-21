@@ -42,15 +42,15 @@ function AviationSecurity() {
     };
 
     return (
-        <div className="App">
+        <div className="wrapper">
             {showScore ? (
                 <div className="score-section">
-                    You scored {score} out of {questions.length}
+                    Ви вірно відповіли на {score} питань з {questions.length} Ваш бал - {score*100/questions.length}
                 </div>
             ) : (
                 <div className="question-section">
                     <div className="question-count">
-                        <span>Question {currentQuestionIndex + 1}</span>/
+                        <span>Питання {currentQuestionIndex + 1}</span>/
                         {questions.length}
                     </div>
                     <div className="question-text">
