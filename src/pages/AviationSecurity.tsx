@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './AviationSecurity.css';
 import { questions } from '../data/data';
 
-interface Question {
-    question: string;
-    options: string[];
-    correctAnswers: string[];
-}
+// interface Question {
+//     question: string;
+//     options: string[];
+//     correctAnswers: string[];
+// }
 
 function AviationSecurity() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -49,7 +49,7 @@ function AviationSecurity() {
     };
 
     return (
-        <div className="wrapper">
+        <div className="wrapper__as">
             <div className="bg_wrapper">
                 <h1 className="title">Авіаційна безпека</h1>
                 {showScore ? (
@@ -70,7 +70,7 @@ function AviationSecurity() {
                         <div className="answer-options">
                             {questions[currentQuestionIndex].options.map(
                                 (option, index) => (
-                                    <label key={index}>
+                                    <label className='radiolabel' key={index}>
                                         <input
                                             type="checkbox"
                                             name="answer"
